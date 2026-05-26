@@ -1,0 +1,32 @@
+body{
+    text-align:center;
+    background-color:green;
+
+
+
+}
+h1{
+    margin-top:50px;
+}
+.choice button{
+    font-size:13px;
+    background-color: aquamarine;
+    cursor:pointer;
+    border:2px solid white;
+    border-radius: 3px;
+}
+.choice button:hover{
+    background-color: azure;
+    transition:all;
+}
+#result{
+    font-size:24px;
+    color:gold;
+    transform:translateY(20px);
+    transition:all 0.5s ease;
+}
+#computer{
+    transform: scale(1.5) ;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+
+}

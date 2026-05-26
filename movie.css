@@ -1,0 +1,54 @@
+body {
+  background: #111;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  cursor:pointer
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 10px;
+}
