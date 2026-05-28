@@ -49,6 +49,125 @@
     <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github"/>
   </a>
 </p>
+# 🚀 DevVerse PRO
+
+### Interactive Developer Dashboard (Vanilla JS)
+
+DevVerse PRO is a sleek, customizable dashboard that turns your browser into a mini workspace. Built with pure JavaScript, it features draggable widgets, persistent layouts, and real-time UI updates—no frameworks, just solid frontend engineering.
+
+---
+
+## 🌐 Live Demo
+
+👉 https://your-username.github.io/devverse-pro/
+*(Replace with your deployed link)*
+
+---
+
+## 🖼️ Preview
+
+<p align="center">
+  <img src="assets/demo.gif" alt="DevVerse Demo" width="800"/>
+</p>
+<!-- Tip: Add a GIF (screen recording) here for max impact -->
+
+---
+
+## ✨ Features
+
+* ⏰ **Live Clock** — Updates every second using native Date APIs
+* 🧭 **Section Navigation** — Clean UI state switching via class toggling
+* 🎨 **Dark / Light Mode** — Theme toggle with persistence (localStorage)
+* 🧲 **Draggable Widgets**
+
+  * Smooth drag & drop
+  * Mouse + Touch support 📱
+  * Boundary constraints (no overflow)
+* 💾 **Persistent Layout** — Widget positions saved & restored automatically
+* 🔄 **Reset Layout** — One-click restore to defaults
+
+---
+
+## 🛠️ Tech Stack
+
+* **HTML5**
+* **CSS3**
+* **JavaScript (Vanilla JS)**
+
+> No frameworks. Everything implemented from scratch to demonstrate core fundamentals.
+
+---
+
+## 🧠 Engineering Highlights
+
+* DOM manipulation & event delegation
+* Mouse + touch event handling
+* Custom drag-and-drop system (with offset calculation)
+* Viewport boundary constraints
+* State persistence via `localStorage`
+* Modular UI logic (sections, widgets, theme)
+
+---
+
+## 📂 Project Structure
+
+```bash
+DevVerse-PRO/
+│── index.html
+│── style.css
+│── script.js
+│── assets/
+│    └── demo.gif
+```
+
+---
+
+## ⚙️ Getting Started
+
+```bash
+git clone https://github.com/your-username/devverse-pro.git
+cd devverse-pro
+open index.html
+```
+
+Or simply open `index.html` in your browser.
+
+---
+
+## 🚀 Roadmap
+
+* 🌦️ Weather API integration
+* 🔐 Authentication (Firebase / Node.js)
+* 📊 GitHub activity widget
+* 🤖 AI assistant panel
+* ☁️ Cloud sync for layouts
+
+---
+
+## 💡 Why This Project?
+
+While many beginner projects focus on static UI, DevVerse PRO explores **interactive systems**:
+
+* Persistent UI state
+* Complex user interactions
+* Real-world dashboard behavior
+
+Perfect for showcasing **frontend problem-solving and UX thinking**.
+
+---
+
+## 👨‍💻 Author
+
+**Vygha Rajesh**
+Aspiring Software Engineer (ECE) | Frontend Enthusiast
+
+---
+
+## ⭐ Show Some Love
+
+If you like this project, drop a ⭐ on GitHub.
+It helps more than you think.
+
 
 ---
 
