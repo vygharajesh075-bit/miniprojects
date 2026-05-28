@@ -1,0 +1,253 @@
+/* =========================
+   RESET + BASE
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    overflow: hidden; /* prevents scroll while dragging */
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+.sidebar {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.sidebar li:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* =========================
+   MAIN AREA (IMPORTANT FIX)
+   ========================= */
+.main {
+    position: relative; /* allows absolute widgets inside */
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+.section {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.section.active {
+    display: block;
+}
+
+/* =========================
+   CARD STYLE (GLASS UI)
+   ========================= */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* =========================
+   DRAGGABLE WIDGETS
+   ========================= */
+.draggable {
+    position: absolute;
+    width: 260px;
+    cursor: grab;
+    transition: transform 0.2s ease;
+}
+
+/* dragging feel */
+.draggable:active {
+    cursor: grabbing;
+    transform: scale(1.05);
+    z-index: 1000;
+}
+
+/* =========================
+   DEFAULT POSITIONS
+   ========================= */
+#clockWidget {
+     top: 100px;
+    left: 300px; 
+}
+
+#githubWidget {
+    top: 100px;
+    left: 600px;
+}
+
+#musicWidget {
+    top: 350px;
+    left: 300px;
+}
+
+#chatWidget {
+    top: 350px;
+    left: 600px;
+}
+
+#taskWidget {
+    top: 600px;
+    left: 300px;
+}
+
+#weatherWidget {
+    top: 600px;
+    left: 600px;
+}
+
+/* =========================
+   CHAT
+   ========================= */
+#chatBox {
+    height: 200px;
+    /* overflow-y: auto; */
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 5px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* =========================
+   TASKS
+   ========================= */
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    margin: 8px 0;
+    padding: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* =========================
+   MUSIC PLAYER
+   ========================= */
+.music-player {
+    text-align: center;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* =========================
+   WEATHER
+   ========================= */
+#weather input {
+    padding: 6px;
+    margin-top: 5px;
+}
+
+#weatherResult {
+    margin-top: 10px;
+}
+
+/* =========================
+   THEME TOGGLE
+   ========================= */
+.toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2000;
+}
+
+/* =========================
+   LIGHT MODE
+   ========================= */
+.light {
+    background: #f1f5f9;
+    color: black;
+}
+
+.light .card {
+    background: rgba(0,0,0,0.05);
+}
+
+.light .sidebar {
+    background: rgba(0,0,0,0.05);
+}
+
+/* =========================
+   SCROLLBAR (BONUS)
+   ========================= */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+}

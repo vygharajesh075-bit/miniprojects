@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevVerse Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- THEME TOGGLE -->
+<div class="toggle">🌙</div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>⚡ DevVerse</h2>
+        <ul>
+            <li onclick="showSection('dashboard')">Dashboard</li>
+            <li onclick="showSection('music')">Music</li>
+            <li onclick="showSection('chat')">AI Chat</li>
+            <li onclick="showSection('tasks')">Tasks</li>
+            <li onclick="showSection('weather')">Weather</li>
+        </ul>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="section active">
+
+            <div class="card draggable" id="clockWidget">
+                <h3>🕒 Time</h3>
+                <div id="clock"></div>
+            </div>
+
+         
+
+        </section>
+
+        <!-- MUSIC -->
+        <section id="music" class="section">
+
+            <div class="card draggable music-player" id="musicWidget">
+                <h3>🎵 Music Player</h3>
+                <audio id="audio"></audio>
+
+                <div id="songTitle">No song</div>
+
+                <div class="controls">
+                    <button onclick="prevSong()">⏮</button>
+                    <button onclick="playSong()">▶</button>
+                    <button onclick="pauseSong()">⏸</button>
+                    <button onclick="nextSong()">⏭</button>
+                </div>
+
+                <input type="range" id="progress" value="0">
+            </div>
+
+        </section>
+
+        <!-- CHAT -->
+        <section id="chat" class="section">
+
+            <div class="card draggable chat" id="chatWidget">
+                <h3>🧠 AI Chat</h3>
+
+                <div id="chatBox"></div>
+
+                <div class="chat-input">
+                    <input id="chatInput" placeholder="Ask something...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+        </section>
+        
+
+        <!-- TASKS -->
+        <section id="tasks" class="section">
+
+            <div class="card draggable" id="taskWidget">
+                <h3>✅ Tasks</h3>
+
+                <div class="task-input">
+                    <input id="taskInput" placeholder="New task...">
+                    <button onclick="addTask()">Add</button>
+                </div>
+
+                <ul id="taskList"></ul>
+            </div>
+
+        </section>
+
+        <!-- WEATHER -->
+        <section id="weather" class="section">
+
+            <div class="card draggable" id="weatherWidget">
+                <h3>🌦 Weather</h3>
+
+                <input id="city" placeholder="Enter city">
+                <button onclick="getWeather()">Get</button>
+                <button onclick="getLocationWeather()">📍 Use My Location</button>
+
+                <div id="weatherResult"></div>
+            </div>
+
+        </section>
+        <div class="card draggable" id="githubWidget">
+    <h3>📊 GitHub Stats</h3>
+    <p>Repos: <span id="repos"></span></p>
+    <p>Stars: <span id="stars"></span></p>
+    <p>Followers: <span id="followers"></span></p>
+</div>
+
+    </main>
+</div>
+
+<script src="app.js"></script>
+<script src="music.js"></script>
+<script src="chat.js"></script>
+<script src="tasks.js"></script>
+<script src="weather.js"></script>
+<script src="github.js"></script>
+
+
+</body>
+</html>
