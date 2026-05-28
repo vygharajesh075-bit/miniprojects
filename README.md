@@ -59,9 +59,7 @@ DevVerse PRO is a sleek, customizable dashboard that turns your browser into a m
 
 ## 🌐 Live Demo
 
-👉 https://your-username.github.io/devverse-pro/
-*(Replace with your deployed link)*
-
+https://vygharajesh075-bit.github.io/devverse-pro/
 ---
 
 ## 🖼️ Preview
